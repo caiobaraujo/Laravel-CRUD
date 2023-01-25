@@ -11,5 +11,9 @@ class Project extends Model
         'title', 'code', 'start_date','end_date'
     ];
 
+    public function user() {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
+
     use HasFactory;
 }

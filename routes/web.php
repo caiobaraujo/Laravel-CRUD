@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,8 @@ Route::get('/projects/all', [ProjectController::class,'all']);
 Route::get('/projects/edit/{id}', [ProjectController::class,'edit']);
 Route::put('/projects/update/{id}', [ProjectController::class,'update']);
 Route::get('/projects/delete/{id}', [ProjectController::class,'delete']);
+
+Route::get('/users',[UserController::class, 'index']);
 
 
 

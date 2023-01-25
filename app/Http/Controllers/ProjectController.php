@@ -22,7 +22,8 @@ class ProjectController extends Controller
 
         $projects = $project->find($request->id);
         
-        dd($projects);
+        //dd($projects);
+        return $projects->user;
     }
 
     public function all(Request $request) {
