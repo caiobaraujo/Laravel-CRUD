@@ -7,6 +7,15 @@
     <title>Projeto</title>
 </head>
 <body>
+
+    @if ($errors->any())        
+        <ul class="errors">
+            @foreach ($errors->all() as $error)
+                <li class="error">{{$error}}</li>
+            @endforeach
+        </ul>
+        
+    @endif
     
     <form action="/project/create" method="POST">
         @csrf

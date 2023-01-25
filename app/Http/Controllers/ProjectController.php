@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateUpdateFormRequest;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
-    public function create(Request $r) {
+    public function create(CreateUpdateFormRequest $r) {
         Project::create([
             'title' => $r->title,
             'code' => $r->code,
