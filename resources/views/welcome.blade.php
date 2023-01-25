@@ -32,7 +32,8 @@
         <label for="">End_date</label>
         <input type="date"  name="end_date">
         <br/><br/>
-        <button>Enviar Cadastro</button>
-    </form>   
+        <button>Criar Projeto</button>
+    </form> 
+      
 </body>
 </html>

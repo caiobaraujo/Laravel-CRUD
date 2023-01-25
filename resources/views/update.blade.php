@@ -25,7 +25,8 @@
         <label for="">End_date</label>
         <input type="date"  name="end_date" value="{{ $project->end_date}}">
         <br/><br/>
-        <button>Enviar Cadastro</button>
-    </form>   
+        <button>Atualizar Projeto</button>
+    </form> 
+      
 </body>
 </html>

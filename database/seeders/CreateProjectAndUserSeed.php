@@ -20,10 +20,10 @@ class CreateProjectAndUserSeed extends Seeder
     public function run()
     {
         DB::table('projects')->insert([
-            "title"=> "Caio araujo",
+            "title"=> "Projeto 01",
 	        "code"=> "123",
-	        "start_date"=> Carbon::parse('2000-01-01')->format('Y-m-d'),
-	        "end_date"=> Carbon::parse('2000-01-01')->format('Y-m-d'),
+	        "start_date"=> Carbon::parse('2023-02-01')->format('Y-m-d'),
+	        "end_date"=> Carbon::parse('2000-02-02')->format('Y-m-d'),
 
         ]);
 

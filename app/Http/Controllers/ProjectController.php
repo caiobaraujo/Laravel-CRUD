@@ -24,7 +24,7 @@ class ProjectController extends Controller
         $projects = $project->find($request->id);
         
         //dd($projects);
-        return $projects->user;
+        return $projects;
     }
 
     public function all(Request $request) {
@@ -37,13 +37,10 @@ class ProjectController extends Controller
         $project = new Project;
         $projects = $project->find($request->id);
         return view('update',['project' => $projects]);
-       // $project->title='Project 01 atualizado';
-        //$project->save();
-
-        //return $project;
+       
     }
 
-    public function update(Request $request) {
+    public function update(CreateUpdateFormRequest $request) {
         $project = new Project;
         $projects = $project->find($request->id);
         
